@@ -4,6 +4,7 @@
 }
 
 body{
+    background-color: lightslategray;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,3 +12,32 @@ body{
     height: 100vh;
     overflow: hidden;
 }
+
+.search{
+    position: relative;
+    height: 50px;
+}
+
+.search .input{
+    padding: 15px;
+    font-size: 18px;
+    margin: 0;
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    border: 0;
+    transition: width 0.3s ease;
+}
+
+.search .btn{
+    height: 50px;
+    width: 50px;
+    border: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: translateX(198s);
+
+}
+
+
