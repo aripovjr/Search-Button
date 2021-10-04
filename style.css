@@ -29,15 +29,28 @@ body{
     transition: width 0.3s ease;
 }
 
-.search .btn{
+.btn{
+    cursor: pointer;
+    font-size: 24px;
     height: 50px;
     width: 50px;
     border: 0;
     position: absolute;
     left: 0;
     top: 0;
-    transition: translateX(198s);
+    transition: transform 0.3s;
 
 }
 
+.btn:focus, .input:focus{
+    outline: none;
+}
+
+.search.active .input{
+    width: 200px;
+}
+
+.search.active .btn{
+    transform: translateX(198px);
+}
 
